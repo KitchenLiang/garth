@@ -1,0 +1,24 @@
+.animation_h1{
+    position: relative;
+    top:-200px;
+    animation:animation_h1 1s ease 1s 1 normal forwards;
+    -webkit-animation:animation_h1 1s ease 1s 1 normal forwards;
+}
+@keyframes animation_h1{
+    0%{top:-200px}
+    60%{top:10px}
+    90%{top:-5px}
+    /*90%{top:3px}*/
+    100%{top:0}
+}
+.animation_span{
+    position: relative;
+    top:400px;
+    animation:animation_span 1s ease 2s 1 normal forwards;
+    -webkit-animation:animation_span 1s ease 2s 1 normal forwards;
+    /*overflow: hidden;*/
+}
+@keyframes animation_span {
+    0%{top:400px;}
+    100%{top:0;}
+}

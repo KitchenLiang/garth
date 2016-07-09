@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>myWorks</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper-3.2.7.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="my_nav col-md-12 col-sm-12 col-xs-12 ">
+                <a class="logo " href="#">ROOSTER</a>
+                <div class="dropdown hidden-lg hidden-md hidden-sm text-right" id="down_css">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </button>
+                    <ul class="dropdown-menu col-xs-6 dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="index.html" >首页</a></li>
+                        <li><a href="portfolio.html">作品</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="shop.html">商城</a></li>
+                        <li>
+                            <div class="user_action">
+                                <a href="#" class="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                <a href="#" class="user_login" data-toggle="modal"
+                                   data-target="#myModal2">登陆</a>
+                                <a href="#" class="user_member">用户</a>
+                                <a href="#" class="user_reg" data-toggle="modal"
+                                   data-target="#myModal">注册</a>
+                                <a href="#" class="login_out">退出</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="nav_right hidden-xs">
+                    <li><a href="index.html" class="nav_active" id="this_page">首页</a></li>
+                    <li><a href="portfolio.html">作品</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="blog.html">博客</a></li>
+                    <li><a href="shop.html">商城</a></li>
+                    <!--<li></li>-->
+                    <li id="navslip"></li>
+                    <div class="user_action">
+                    <a href="#" class="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                    <a href="#" class="user_login" data-toggle="modal"
+                       data-target="#myModal2">登陆</a>
+                        <a href="#" class="user_member">用户</a>
+                    <a href="#" class="user_reg" data-toggle="modal"
+                       data-target="#myModal">注册</a>
+                        <a href="#" class="login_out">退出</a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="user_search">
+            <form action="">
+                <input type="search" name="user_search" placeholder="搜索" /><input type="submit" class="btn-primary2"/>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <div id="" class="swiper-container" data-ride="carousel">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="swiper-pagination">
+        </ol>
+
+        <!-- 轮播（Carousel）项目 -->
+        <div class="swiper-wrapper" role="listbox">
+            <div class="swiper-slide" id="item-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1 class="animation_h1">Powerful</h1>
+                            <span class="animation_span">Multipurpose Theme</span>
+                            <div><h4>Built with Bootstrap 3x</h4></div>
+                            <div><h4>20+ HTML Templates</h4></div>
+                            <div><h4>Isotope Gallery</h4></div>
+                            <div><a href="#" class="bt_star">Get Started Now!</a></div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs" >
+                            <img class="hidden-xs" id="computer" src="img/showcase.png" alt="电脑"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="item-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7  hidden-xs">
+                            <div class="video-container">
+                                <iframe width="100%" height="350" src="http://player.youku.com/embed/XODI5OTMxOTQ0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-5" >
+                            <h1 class="animation_h1">Responsive</h1>
+                            <h2 class="animation_span"><strong>Video Support</strong></h2>
+                            <div><h4>Excellent With Rooster</h4></div>
+                            <div><h2>Add You-tube Videos to your Slides easily</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="item-3">
+                <div class="container">
+                    <div class="col-sm-6 text-center" id="man_div"><img id="man_img" src="img/people-1.png" alt="人物"/></div>
+                    <div class="col-sm-6">
+                        <h1 class="animation_h1">Introducing</h1>
+                        <h2 class="animation_span" style="color: #999999"><span style="color:#19a9e5">Beautiful</span> Featured</h2>
+                        <div><h4><i class="glyphicon glyphicon-star"></i>Multi-Purpose Template</h4></div>
+                        <div><h4><i class="glyphicon glyphicon-star"></i>Fully Responsive</h4></div>
+                        <div><h4><i class="glyphicon glyphicon-star"></i>Easy to Customize</h4></div>
+                        <div><h4><i class="glyphicon glyphicon-star"></i>Font Awesome Support</h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 轮播（Carousel）导航 -->
+        <a class="swiper-button-prev" href="#" role="button" data-slide="prev">
+        </a>
+        <a class="swiper-button-next" href="#" role="button" data-slide="next">
+        </a>
+    </div>
+
+    <div class="home_severs text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"></div>
+                <h2>BRING GOODNESS IN YOUR WEBSITE</h2>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="shadow1"></div>
+    <div class="severs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-shield"></i>
+                </span>
+                    <h2>Secure Payment Solution</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-refresh"></i>
+                </span>
+                    <h2>Offering Return Policy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-plane"></i>
+                </span>
+                    <h2>Free Shipping</h2>
+                    <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-rocket"></i>
+                </span>
+                    <h2>Around the Clock Support</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-truck"></i>
+                </span>
+                    <h2>On Time Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                <span class="icon_btn">
+                    <i class="fa fa-money"></i>
+                </span>
+                    <h2>Money Guarantee</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="responsive_show">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2>Fully Responsive Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.</p>
+                    <ul>
+                        <li class="text_blue"><i class="fa fa-mobile"></i></li>
+                        <li><i class="fa fa-tablet"></i></li>
+                        <li><i class="fa fa-laptop"></i></li>
+                        <li><i class="fa fa-desktop"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                    <img src="img/iphone.png" alt="iphone"/>
+                    <img src="img/ipad.png" alt="ipad"/>
+                    <img src="img/laptop.png" alt="laptop"/>
+                    <img src="img/desktop.png" alt="desktop"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                    <img src="img/article-girl.png" alt="woman" style="width: 100%;"/>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h2>Rooster is a good choice for your site</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.</p>
+                    <p class="hidden-sm"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu.
+                    </p>
+                    <a href="#" class="btn-primary">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>What Customer Are Saying?</h2>
+                    <img class="img-responsive" src="img/utitlebg.png" alt="icon"/>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="comment_1">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+
+                        <span>John Smith</span>
+                        <div class="comment_text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="comment_1">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="comment_1">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="comment_1">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="comment_2">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="comment_2">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="comment_2">
+                        <img src="img/avatar.jpg" style="width:60px;height:60px;" alt="...">
+                        <span>John Smith</span>
+                        <div class="comment_text1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="buy">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Do You Like What You See?</h2>
+                    <img class="img-responsive" src="img/utitlebg.png" alt="icon"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.</p>
+                    <a href="#" class="btn-primary">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog_posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Blog Posts</h2>
+                    <img class="img-responsive" src="img/utitlebg.png" alt="icon"/>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/avatar.jpg" alt="头像">
+                    <div class="blog_content">
+                        <h3>
+                            <a href="blog-post.html">At vero eos et accu samus et iusto odio dignis simos ducimus qui bland itiis prae sentium voluptatum.</a>
+                        </h3>
+                        <hr/>
+                        <h4>by John smith</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas tuerpis.....</p>
+                        <a href="#" class="btn-primary">Read More...</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/avatar.jpg" alt="头像">
+                    <div class="blog_content">
+                        <h3>
+                            <a href="blog-post.html">At vero eos et accu samus et iusto odio dignis simos ducimus qui bland itiis prae sentium voluptatum.</a>
+                        </h3>
+                        <hr/>
+                        <h4>by John smith</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas tuerpis.....</p>
+                        <a class="btn-primary" href="">Read More...</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/avatar.jpg" alt="头像">
+                    <div class="blog_content">
+                        <h3>
+                            <a href="blog-post.html">At vero eos et accu samus et iusto odio dignis simos ducimus qui bland itiis prae sentium voluptatum.</a>
+                        </h3>
+                        <hr/>
+                        <h4>by John smith</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas tuerpis.....</p>
+                        <a class="btn-primary" href="">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <!-- Contact Us -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <h4>Contact Us</h4>
+                <p>
+                    051 Ave C South Saskatoon, 10 Elizabeth <br>
+                    Street Mountain Road, CA United States.
+                    <br><br>
+                    Phone : 92 026 365 2569<br>
+                    Fax   : 92 026 365 2570
+                    <br><br>
+                    <a href="#">supportcenter@mail.com</a>
+                </p>
+            </div>
+
+
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <h4>Useful Links</h4>
+                <p>
+                    <a href="#">Simple and clean blog design </a><br>
+                    <a href="#">We bring good to online presence  </a><br>
+                    <a href="#">Fully responsive creative design  </a><br>
+                    <a href="#">Creative homepage design </a><br>
+                    <a href="#">Our services are most nifty  </a><br>
+                    <a href="#">Most flexible theme </a><br>
+                </p>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h4>Gallery</h4>
+                <div class="gallery">
+                    <ul class="list_img">
+                        <li><a href="#"><img src="img/avatar-1.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-2.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-3.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-4.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-5.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-6.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-7.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <li><a href="#"><img src="img/avatar-8.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                        <div style="clear: both"></div>
+                    </ul>
+                </div>
+            </div><!-- / .Recent Tweets -->
+
+            <!-- Newsletter -->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h4>Newsletter</h4>
+                <p>
+                    By subscribing to our mailing list you will get the latest news from us.
+                </p>
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="input-group">
+                                <label class="sr-only" for="subscribe-email">Email address</label>
+                                <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn-primary2">OK</button>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <h4>Follow us on</h4>
+                <ul class="list-inline list_icon">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<!--模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    注册
+                </h4>
+            </div>
+            <form role="form" id="reg" method="post">
+            <div class="modal-body reg_form">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control " id="userName" name="userName" placeholder="用户名" >
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="邮箱" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a valid email here." data-original-title="Email">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a good password here." data-original-title="Password">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" id="repeat_password" name="repeat_password" placeholder="重复密码" data-toggle="popover" data-trigger="focus" data-content="Confirm your password here." data-original-title="Repeat Password">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">我同意 <a href="#">阅读并接受《用户协议》</a>
+                        </label>
+                    </div>
+                    <!--<input class="btn-primary reg_submit" type="button" value="创建用户"/>-->
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="submit" class="btn-primary reg_submit">
+                    提交
+                </button>
+            </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-sm " >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    登陆
+                </h4>
+            </div>
+            <form role="form" id="login_form" action="#">
+            <div class="modal-body">
+                <div class="my_error"><ol class="my_error" ></ol></div>
+
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" id="login_user" name="login_user" placeholder="用户名" >
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" id="login_pass" name="login_pass" placeholder="密码">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 下次自动登录
+                        </label>
+
+                    </div>
+
+
+            </div>
+            <div class="modal-footer">
+
+                <input type="submit" class="btn-primary login_submit" value="提交">
+
+            </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>myWorks</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper-3.2.7.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="my_nav col-md-12 col-sm-12 col-xs-12 ">
+                <a class="logo " href="#">ROOSTER</a>
+                <div class="dropdown hidden-lg hidden-md hidden-sm text-right" id="down_css">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </button>
+                    <ul class="dropdown-menu col-xs-6 dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="index.html" >首页</a></li>
+                        <li><a href="portfolio.html">作品</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="shop.html">商城</a></li>
+                        <li>
+                            <div class="user_action">
+                                <a href="#" class="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                <a href="#" class="user_login" data-toggle="modal"
+                                   data-target="#myModal2">登陆</a>
+                                <a href="#" class="user_member">用户</a>
+                                <a href="#" class="user_reg" data-toggle="modal"
+                                   data-target="#myModal">注册</a>
+                                <a href="#" class="login_out">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav_right hidden-xs">
+                    <li><a href="index.html" >首页</a></li>
+                    <li><a href="portfolio.html" class="nav_active" id="this_page">作品</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="blog.html">博客</a></li>
+                    <li><a href="shop.html" >商城</a></li>
+                    <!--<li></li>-->
+                    <li id="navslip"></li>
+                    <div class="user_action">
+                        <a href="#" class="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        <a href="#" class="user_login" data-toggle="modal"
+                           data-target="#myModal2">登陆</a>
+                        <a href="#" class="user_member">用户</a>
+                        <a href="#" class="user_reg" data-toggle="modal"
+                           data-target="#myModal">注册</a>
+                        <a href="#" class="login_out">退出</a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="user_search">
+            <form action="">
+                <input type="search" name="user_search" placeholder="搜索" /><input type="submit" class="btn-primary2"/>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="content">
+    <div class="top_bg">
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb hidden-xs">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">portfolio</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul class="project-filter" id="filters">
+                <li><a href="#" data-filter="*">All</a></li>
+                <li><a href="#" data-filter=".animation">Animation</a></li>
+                <li><a href="#" data-filter=".video">Video</a></li>
+                <li><a href="#" data-filter=".photography">Photography</a></li>
+                <li><a href="#" data-filter=".webdesign">Web Design</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row portfolio-img">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio1.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio1.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-1.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio2.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio2.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-2.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio3.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio3.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-3.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio4.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio4.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-4.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio5.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio5.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-5.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio6.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio6.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-6.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio7.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio7.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-7.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio8.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio8.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-8.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio9.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio9.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-9.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio10.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio10.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-10.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio11.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio11.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-11.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="portfolio-item">
+                        <div class="portfolio-thumbnail">
+                            <img class="img-responsive" src="img/portfolio/portfolio12.jpg" alt="...">
+                            <div class="mask">
+                                <p>
+                                    <a href="img/portfolio/portfolio12.jpg" data-lightbox="template_showcase"><i class="fa fa-search fa-2x"></i></a>
+                                    <a href="portfolio-item-12.html"><i class="fa fa-link fa-2x"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div> <!-- / .portfolio-item -->
+                </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Contact Us -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <h4>Contact Us</h4>
+                <p> 051 Ave C South Saskatoon, 10 Elizabeth <br /> Street Mountain Road, CA United States. <br /><br /> Phone : 92 026 365 2569<br /> Fax : 92 026 365 2570 <br /><br /> <a href="#">supportcenter@mail.com</a> </p>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <h4>Useful Links</h4>
+                <p> <a href="#">Simple and clean blog design </a><br /> <a href="#">We bring good to online presence </a><br /> <a href="#">Fully responsive creative design </a><br /> <a href="#">Creative homepage design </a><br /> <a href="#">Our services are most nifty </a><br /> <a href="#">Most flexible theme </a><br /> </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h4>Gallery</h4>
+                <div class="gallery">
+                    <ul class="list_img">
+                        <li><a href="#"><img src="img/avatar-1.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-2.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-3.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-4.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-5.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-6.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-7.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <li><a href="#"><img src="img/avatar-8.jpg" style="width:60px;height:60px;" alt="..." /></a></li>
+                        <div style="clear: both"></div>
+                    </ul>
+                </div>
+            </div>
+            <!-- / .Recent Tweets -->
+            <!-- Newsletter -->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h4>Newsletter</h4>
+                <p> By subscribing to our mailing list you will get the latest news from us. </p>
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="input-group">
+                                <label class="sr-only" for="subscribe-email">Email address</label>
+                                <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email" />
+                                <span class="input-group-btn"> <button type="submit" class="btn-primary2">OK</button> </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br />
+                <h4>Follow us on</h4>
+                <ul class="list-inline list_icon">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    注册
+                </h4>
+            </div>
+            <form role="form" id="reg" method="post">
+                <div class="modal-body reg_form">
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control " id="userName" name="userName" placeholder="用户名" >
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="邮箱" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a valid email here." data-original-title="Email">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="Enter a good password here." data-original-title="Password">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <input type="password" class="form-control" id="repeat_password" name="repeat_password" placeholder="重复密码" data-toggle="popover" data-trigger="focus" data-content="Confirm your password here." data-original-title="Repeat Password">
+                            </div>
+                            <div class="col-sm-5 my_error"></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">我同意 <a href="#">阅读并接受《用户协议》</a>
+                        </label>
+                    </div>
+                    <!--<input class="btn-primary reg_submit" type="button" value="创建用户"/>-->
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="submit" class="btn-primary reg_submit">
+                        提交
+                    </button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-sm " >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    登陆
+                </h4>
+            </div>
+            <form role="form" id="login_form" action="#">
+                <div class="modal-body">
+                    <div class="my_error"><ol class="my_error" ></ol></div>
+
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" id="login_user" name="login_user" placeholder="用户名" >
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" id="login_pass" name="login_pass" placeholder="密码">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 下次自动登录
+                        </label>
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <input type="submit" class="btn-primary login_submit" value="提交">
+
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+
+</div>
+</body>
+</html>
